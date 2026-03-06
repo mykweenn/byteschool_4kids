@@ -22,12 +22,12 @@
 
 **String** (строка):
    ``` gdscript
-   var playerName : String = "Player1"
+   var player_name : String = "Player1"
    ```
 
 **bool** (логическое значение):
    ``` gdscript
-   var isGameOver : bool = false
+   var is_game_over : bool = false
    ```
 
 **Array** (массив):
@@ -37,7 +37,7 @@
 
 **Dictionary** (словарь):
    ``` gdscript
-   var playerData : Dictionary = {"name": "Alice", "score": 100}
+   var player_data : Dictionary = {"name": "Alice", "score": 100}
    ```
 
 **Vector2** (двумерный вектор):
@@ -47,7 +47,7 @@
 
 **Color** (цвет):
    ``` gdscript
-   var backgroundColor : Color = Color(0.2, 0.3, 0.5)
+   var background_color : Color = Color(0.2, 0.3, 0.5)
    ```
 
 **И еще про переменные**
@@ -98,7 +98,7 @@ deal_damage(15, enemy)
 
 ### 4. **Условные операторы**: Используй `if`, `elif` и `else` для выполнения различных действий в зависимости от условий.
    ``` gdscript
-   func checkHealth(health):
+   func check_health(health):
     if health > 75:
         print("Здоровье отличное!")
     elif health > 50:
@@ -109,20 +109,20 @@ deal_damage(15, enemy)
         print("Опасное состояние здоровья!")
    
    # Пример вызова функции с разными значениями здоровья
-   checkHealth(80)  # Выведет "Здоровье отличное!"
-   checkHealth(60)  # Выведет "Здоровье нормальное."
-   checkHealth(20)  # Выведет "Опасное состояние здоровья!"
+   check_health(80)  # Выведет "Здоровье отличное!"
+   check_health(60)  # Выведет "Здоровье нормальное."
+   check_health(20)  # Выведет "Опасное состояние здоровья!"
    ```   
 
    
 ### 5. **Циклы**: Используй `for` и `while` для выполнения действий в цикле.
 
    ``` gdscript
-   func countToTen():
+   func count_to_ten():
        for i in range(1, 11):  # Цикл от 1 до 10
            print(i)
    
-   func printNames(names):
+   func print_names(names):
        for name in names:  # Цикл по элементам списка
            print(name)
    
